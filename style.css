@@ -1,0 +1,191 @@
+body {
+
+    background-color: #000000;
+    
+      
+}
+
+#master_frame {
+    display: flex;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+   
+}
+
+
+@keyframes move-left {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 30%;
+  }
+}
+
+
+#name_title_frame {
+    color :white;
+    font-size:100px;
+    font-family: Arial;
+    font-weight: bold;
+
+    margin: 50px;
+
+ 
+
+   
+}
+
+
+#name_title_svg {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    animation: addShadow 1s forwards;
+    animation-delay: 5s;
+    
+}
+
+@keyframes addShadow {
+  to {
+    filter: drop-shadow(0 0 8px rgb(255, 255, 255));
+  }
+  
+}
+
+
+#icon_frame {
+   
+   display: grid;
+    grid-template-columns: repeat(3, 100px); /* 3 colonnes de 100px */
+    grid-template-rows: repeat(3, 100px);    /* 3 lignes de 100px */
+    gap: 5px;           
+}
+
+
+
+
+.square{
+    height: 100px;
+    width: 100px;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
+
+
+
+@keyframes addGlow {
+    to {
+        box-shadow: 0 0 15px currentColor, 0 0 30px currentColor;
+    }
+}
+
+
+
+
+#red {
+    background-color: red;
+    animation: revealLeft 0.6s forwards, addGlow 0.4s forwards;
+    animation-delay: 1.0s, 1.6s;
+}
+
+#orange {
+    background-color: orange;
+    animation: revealTop 0.6s forwards, addGlow 0.4s forwards;
+    animation-delay: 1.15s, 1.75s;
+}
+
+#yellow {
+    background-color: yellow;
+    animation: revealTop 0.6s forwards, addGlow 0.4s forwards;
+    animation-delay: 1.30s, 1.90s;
+}
+
+#green {
+    background-color: #00FF00;
+    animation: revealRight 0.6s forwards, addGlow 0.4s forwards;
+    animation-delay: 1.45s, 2.05s;
+}
+
+#light_blue {
+    background-color: aqua;
+    animation: revealBottom 0.6s forwards, addGlow 0.4s forwards;
+    animation-delay: 1.60s, 2.20s;
+}
+
+#blue {
+    background-color: blue;
+    animation: revealBottom 0.6s forwards, addGlow 0.4s forwards;
+    animation-delay: 1.75s, 2.35s;
+}
+
+#purple {
+    background-color: #8400ff;
+    animation: revealLeft 0.6s forwards, addGlow 0.4s forwards;
+    animation-delay: 1.95s, 2.55s;
+}
+
+#pink {
+    background-color: #FF00FF;
+    animation: revealLeft 0.6s forwards, addGlow 0.4s forwards;
+    animation-delay: 2.10s, 2.70s;
+}
+
+#black {
+    background-color: black;
+}
+
+
+@keyframes revealTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-500px); /* Départ du haut */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Arrive à sa position normale */
+  }
+}
+
+
+@keyframes revealBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(500px); /* Départ du bas */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Arrive à sa position normale */
+  }
+}
+
+@keyframes revealRight {
+  0% {
+    opacity: 0;
+    transform: translateX(500px); /* Départ de la droite */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Arrive à sa position normale */
+  }
+}
+
+@keyframes revealLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px); /* Départ de la droite */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* Arrive à sa position normale */
+  }
+}
+

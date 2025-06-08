@@ -1,0 +1,69 @@
+      @-webkit-keyframes svg-text-anim {
+       40% {
+          stroke-dashoffset: 0;
+          fill: transparent;
+        }
+        70% {
+          stroke-dashoffset: 0;
+          fill: #ffffff;
+        }
+        100% {
+          stroke-dashoffset: 0;
+          fill: #ffffff;
+        }
+        
+    }
+    /* Most browsers */
+    /* @keyframes svg-text-anim {
+       40% {
+          stroke-dashoffset: 0;
+          fill: transparent;
+        }
+        70% {
+          stroke-dashoffset: 0;
+          fill: #ffffff;
+        }
+        100% {
+          stroke-dashoffset: 0;
+          fill: #ffffff;
+        }
+        
+    } */
+
+    @keyframes svg-text-anim {
+
+    30% {
+      stroke-dashoffset: 0;
+      fill: transparent;
+    }
+    45% {
+      fill: #ffffff; /* blanc */
+      stroke-dashoffset: 0;
+
+    }
+    75% {
+      fill: #ffffff; /* blanc */
+      stroke-dashoffset: 0;
+      stroke: white;
+    }
+    80% {
+      fill: #ff0000; /* bleu */
+      stroke-dashoffset: 0;
+       stroke: #ff0000;
+    }
+    85% {
+      fill: #ffffff; /* blanc */
+      stroke-dashoffset: 0;
+      stroke: white;
+    }
+    90% {
+      fill: #0400ff; /* rouge */
+      stroke-dashoffset: 0;
+      stroke: #0400ff;
+    }
+    100% {
+      fill: #ffffff; /* blanc */
+      stroke-dashoffset: 0;
+       stroke: white;
+    }
+  }
