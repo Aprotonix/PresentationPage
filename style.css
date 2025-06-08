@@ -48,7 +48,7 @@ body {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    animation: addShadow 1s forwards;
+    animation: addShadow 2s forwards;
     animation-delay: 7s;
     
 }
